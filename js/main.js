@@ -5,7 +5,7 @@ console.log('Test verifica JS');
  * 1) CHIEDERE ALL'UTENTE IL N° DI KM CHE VUOLE PERCORRERE
  * 2) CHIEDERE ALL'UTENTE L'ETA' 
  * 3) CALCOLO DEL PREZZO TOTALE SULLA BASE DEI SEGUENTI PARAMETRI:
- * 3A) COSTO AL KM 0.21
+ * 3A) COSTO AL KM 0.21€
  * 3B) APPLICARE UNO SCONTO SULLA VERIFICA DELLA ETA':
  * 3Ba) ETA' < 18 ANNI SCONTO 20%
  * 3Bb) ETA' > 65 ANNI SCONTO 40%
@@ -15,6 +15,8 @@ console.log('Test verifica JS');
 
  var userKm;
  var userAge;
+ var prezzoFinale;
+ var costoKm = 0.21;
 
 // RICHIESTA KM DA PERCORRERE
  userKm = prompt('Quanti km devi percorrere?');
