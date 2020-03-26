@@ -44,6 +44,10 @@ console.log('Test verifica JS');
      valoreSconto = (20 * costoDaScontare) / 100;
      //PRINT DEL VALORE DELLO SCONTO
      console.log("Valore dello sconto è : " + valoreSconto + "€");
+ } else if (userAge >= 65) {
+     valoreSconto = (40 * costoDaScontare) / 100;
+     // PRINT DEL VALORE SCONTO
+     console.log("Valore dello sconto è : " + valoreSconto + "€");
      
  }
  
