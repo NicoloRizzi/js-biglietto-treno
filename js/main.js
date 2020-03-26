@@ -17,9 +17,9 @@ console.log('Test verifica JS');
  var userAge;
  var prezzoFinale;
  var costoKm = 0.21;
- var costoDaScontare;
+ var costoProvvisorio;
  var costoTot;
- var valoreSconto;
+ var valoreSconto = 0;
 
 
 // RICHIESTA KM DA PERCORRERE
@@ -35,22 +35,22 @@ console.log('Test verifica JS');
 
 
  // CALCOLO DEL COSTO DA SCONTARE SULLA BASE DEL VALORE DI USERKM
- costoDaScontare = userKm * costoKm;
+ costoProvvisorio = userKm * costoKm;
  // PRINT DEL DATO OTTENUTO
- console.log("Valore del costo sulla sola base km : " + costoDaScontare + "€");
+ console.log("Valore del costo sulla sola base km : " + costoProvvisorio + "€");
 
  // INIZIO DELLA CONDIZIONE SULLA BASE DELL'ETA' APPLICO IL RELATIVO SCONTO
  if (userAge <= 18) {
-     valoreSconto = (20 * costoDaScontare) / 100;
+     valoreSconto = (20 * costoProvvisorio) / 100;
      //PRINT DEL VALORE DELLO SCONTO
      console.log("Valore dello sconto è : " + valoreSconto + "€");
  } else if (userAge >= 65) {
-     valoreSconto = (40 * costoDaScontare) / 100;
+     valoreSconto = (40 * costoProvvisorio) / 100;
      // PRINT DEL VALORE SCONTO
      console.log("Valore dello sconto è : " + valoreSconto + "€");
- } 
+ }
  //CALCOLO DEL COSTO EFFETTIVO
- costoTot = (costoDaScontare - valoreSconto).toFixed(2);
+ costoTot = (costoProvvisorio - valoreSconto).toFixed(2);
 // PRINT DEL COSTO EFFETTIVO
 console.log("Il tuo prezzo finale scontato è : " + costoTot + "€");
 
