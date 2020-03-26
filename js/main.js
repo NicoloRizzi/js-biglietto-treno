@@ -55,5 +55,6 @@ console.log('Test verifica JS');
 console.log("Il tuo prezzo finale scontato è : " + costoTot + "€");
 
 document.getElementById('prezzo').innerHTML = costoTot;
+document.getElementById('valore').innerHTML = valoreSconto.toFixed(2);
 
  
