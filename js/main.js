@@ -48,6 +48,10 @@ console.log('Test verifica JS');
      valoreSconto = (40 * costoDaScontare) / 100;
      // PRINT DEL VALORE SCONTO
      console.log("Valore dello sconto è : " + valoreSconto + "€");
-     
- }
+ } 
+ //CALCOLO DEL COSTO EFFETTIVO
+ costoTot = (costoDaScontare - valoreSconto).toFixed(2);
+// PRINT DEL COSTO EFFETTIVO
+console.log("Il tuo prezzo finale scontato è : " + costoTot + "€");
+
  
