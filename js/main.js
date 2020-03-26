@@ -51,7 +51,9 @@ console.log('Test verifica JS');
  }
  //CALCOLO DEL COSTO EFFETTIVO
  costoTot = (costoProvvisorio - valoreSconto).toFixed(2);
-// PRINT DEL COSTO EFFETTIVO
+// PRINT DEL COSTO EFFETTIVO 
 console.log("Il tuo prezzo finale scontato è : " + costoTot + "€");
+
+document.getElementById('prezzo').innerHTML = costoTot;
 
  
